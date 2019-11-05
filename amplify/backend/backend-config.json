@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"messaga8b7406ca": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

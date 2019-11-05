@@ -1,0 +1,53 @@
+{
+    "identityPoolName": "messaga8b7406ca_identitypool_8b7406ca",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "messag8b7406ca",
+    "userPoolName": "messaga8b7406ca_userpool_8b7406ca",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "messag8b7406ca_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "messaga8b7406ca",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ],
+    "userPoolGroupList": [],
+    "dependsOn": []
+}
